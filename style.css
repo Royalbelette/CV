@@ -1,0 +1,169 @@
+/* Global*/
+body {
+    font-family: Lato;
+    font-weight: 300;
+    font-size: .9rem;
+    line-height: 1.5;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.4em;
+    font-weight: bold;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.7em;
+    font-weight: bold;
+}
+
+h3 {
+    background-color:rgb(39, 56, 76);
+    color: white;
+    text-align: center;
+    margin: none;
+    font-size: 1.4em;
+}
+
+h4 {
+    background-color: none;
+    color: rgb(39, 56, 76);
+    margin-top: 1em;
+    margin-bottom: .5em;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+
+.cv-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "left-column right-column right-column";
+    width: 1200px;
+    margin: 100px auto;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.0), 0 1px 2px rgba(0,0,0,0.0);
+    border-style: solid;
+    border-color: rgb(39, 56, 76);
+  }
+
+/* Partie gauche */
+.left-column {
+    grid-area: left-column;
+    padding: 50px;
+    background-color : whitesmoke;
+    color : rgb(39, 56, 76);
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    border-right-style: solid;
+    border-right-color: rgb(39, 56, 76);
+}
+
+.portrait {
+    clip-path: ellipse(50% 47%);
+    max-width: 270px;
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 0px;  
+}
+
+.icon{
+    margin-right: .5rem;
+}
+
+.a-propos {
+    font-size: 1.2em;
+    line-height: 1.7em;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(39, 56, 76);
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.QRcode {
+    max-width: 180px;
+    margin: auto;
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.section-l {
+    margin-top: -0.5em;
+    text-align: center;
+    line-height: 1.3em;
+    font-size: 1.3em;
+    margin-bottom: 1.2em;
+}
+
+
+/* Partie droite*/
+
+.right-column {
+    grid-area: right-column;
+    display: grid;
+    grid-template-rows: 250px 1fr;
+    grid-template-areas:
+    "header"
+    "content";
+}
+
+.header {
+  grid-area: header;
+  width: auto;
+  padding: 10px;
+  display: inline-block;
+  background-color: rgb(39, 56, 76);
+  color: white;
+  height: 65%;
+  text-align: center;
+}
+
+span {
+    font-size: 1.4em;
+}
+
+strong {
+    font-weight: bold;
+}
+
+#skills {
+    column-count: 2;
+    column-width: 12em;
+    font-size: 1.2em;
+    margin-left: 10%;
+}
+
+.contenu {
+  grid-area: content;
+  width: 80%;
+  padding: 20px;
+  padding-left: 65px;
+  color: rgb(39, 56, 76);
+  margin-top: -3em;
+  font-size: 1.1em;
+  padding-bottom: 80px;
+}
+
+.section-r {
+    line-height: 1em;
+}
+
+
+
+
+/* 
+à faire :
+uploader images
+finir la déco
+*/
+
+
+
+
